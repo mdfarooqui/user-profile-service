@@ -6,7 +6,7 @@ FROM openjdk:8-jdk-alpine
 
 EXPOSE 8080
 
-ADD target/user.profile.service-10.0-SNAPSHOT docker-user-profile-service.jar
+ADD target/docker-user-profile-service.jar docker-user-profile-service.jar
 
 # java -jar /opt/app/app.jar
 ENTRYPOINT ["java","-jar","/docker-user-profile-service.jar"]
