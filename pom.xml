@@ -30,6 +30,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>docker-user-profile-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
