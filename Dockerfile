@@ -13,10 +13,10 @@ ARG JAR_FILE=target/user-profile-service.jar
 WORKDIR /opt/app
 
 # cp target/spring-boot-web.jar /opt/app/app.jar
-COPY ${JAR_FILE} user-profile-service.jar
+COPY ${JAR_FILE} docker-user-profile-service.jar
 
 # java -jar /opt/app/app.jar
-ENTRYPOINT ["java","-jar","user-profile-service.jar"]
+ENTRYPOINT ["java","-jar","docker-user-profile-service.jar"]
 
 ## sudo docker run -p 8080:8080 -t docker-spring-boot:1.0
 ## sudo docker run -p 80:8080 -t docker-spring-boot:1.0
